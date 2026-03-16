@@ -1,0 +1,22 @@
+name: butik_stylish
+description: Aplikasi Penjualan Brand Baju
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  supabase_flutter: ^2.0.0 # Package utama Supabase
+  flutter_dotenv: ^5.1.0    # Untuk keamanan API Key (Nilai Tambah)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
