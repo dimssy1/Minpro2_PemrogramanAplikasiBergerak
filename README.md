@@ -1,16 +1,24 @@
-# penjualan_baju
+# Minpro2_PemrogramanAplikasiBergerak
 
-A new Flutter project.
+# Butik Stylish App 👗
 
-## Getting Started
+Aplikasi manajemen stok dan penjualan butik sederhana yang dibangun menggunakan **Flutter** dan **Supabase** sebagai database cloud-nya.
 
-This project is a starting point for a Flutter application.
+## Deskripsi Aplikasi
+Butik Stylish adalah aplikasi untuk membantu pemilik butik dalam mencatat stok pakaian secara real-time. Aplikasi ini memungkinkan pengguna untuk melihat daftar produk, menambahkan produk baru ke database cloud, dan melakukan simulasi perhitungan penjualan (checkout).
 
-A few resources to get you started if this is your first Flutter project:
+## Fitur Aplikasi
+* **Real-time Product List**: Menampilkan daftar produk langsung dari database Supabase.
+* **Add New Product**: Menambahkan data produk (Brand, Nama, Harga, Gambar) ke cloud.
+* **Shopping Cart System**: Simulasi pembelian dengan input jumlah barang dan perhitungan total otomatis.
+* **Sales Tracking**: Mencatat riwayat penjualan selama aplikasi berjalan.
+* **Format Rupiah**: Konversi harga otomatis ke format mata uang Indonesia.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Widget yang Digunakan
+* **StatefulWidget & StatelessWidget**: Untuk manajemen state halaman.
+* **GridView.builder**: Menampilkan daftar produk dalam bentuk grid 2 kolom.
+* **FutureBuilder / Async-Await**: Mengambil data secara asynchronous dari API Supabase.
+* **ModalBottomSheet**: Form input modern yang muncul dari bawah layar.
+* **TextFormField with Validation**: Form input dengan validasi agar data tidak kosong.
+* **Card & ClipRantiAlias**: Membuat tampilan produk yang rapi dengan sudut melengkung.
+* **Navigation Bar**: Navigasi antar halaman (Produk & Penjualan).
